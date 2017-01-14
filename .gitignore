@@ -1,0 +1,33 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+
+###########################
+# OrangePi SDK ignore
+# basic rootfs
+jessie-base-arm64.tar.gz
+ArchLinuxARM-aarch64-latest.tar.gz
+xenial-base-arm64.tar.gz
+CentOS-7-aarch64-rootfs-1606.tar.xz
+
+# Build file
+!/patch/*.patch
+!initrd.img
+!sys_config.fex
+sys_config_fix.fex
+BUFFER/
+!bl31.bin
+!asound.state
+!boot0.bin
+!initrd.img
+!.gitignore
+!scp.bin
+
